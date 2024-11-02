@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body class="font-sans bg-gray-100 text-gray-800">
+    <!-- START NAV -->
+    <nav id="navbar" class="bg-white shadow fixed w-full py-4">
+      <div class="container mx-auto flex justify-center space-x-8">
+        <a href="#welcome-section" class="text-gray-600 hover:text-blue-500">About</a>
+        <a href="#projects" class="text-gray-600 hover:text-blue-500">Work</a>
+        <a href="#contact" class="text-gray-600 hover:text-blue-500">Contact</a>
+      </div>
+    </nav>
+    <!-- END NAV -->
+
+    <!-- START WELCOME SECTION -->
+    <section id="welcome-section" class="welcome-section min-h-screen flex flex-col justify-center items-center bg-blue-500 text-white text-center">
+      <h1 class="text-5xl font-bold mb-2">Hey I am Mimic</h1>
+      <p class="text-lg font-light">a web developer</p>
+    </section>
+    <!-- END WELCOME SECTION -->
+
+    <!-- START PROJECTS SECTION -->
+    <section id="projects" class="projects-section py-16 bg-gray-200">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold mb-12">These are some of my projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank" class="project-tile bg-white shadow-lg rounded-lg overflow-hidden">
+            <img class="w-full h-48 object-cover" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project" />
+            <p class="project-title text-lg font-semibold text-center py-4 bg-gray-800 text-white">
+              <span class="code">&lt;</span> Tribute Page <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+          <!-- Project 2 -->
+          <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="project-tile bg-white shadow-lg rounded-lg overflow-hidden">
+            <img class="w-full h-48 object-cover" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" alt="project" />
+            <p class="project-title text-lg font-semibold text-center py-4 bg-gray-800 text-white">
+              <span class="code">&lt;</span> Random Quote Machine <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+          <!-- Project 3 -->
+          <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project-tile bg-white shadow-lg rounded-lg overflow-hidden">
+            <img class="w-full h-48 object-cover" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="project" />
+            <p class="project-title text-lg font-semibold text-center py-4 bg-gray-800 text-white">
+              <span class="code">&lt;</span> JavaScript Calculator <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+        </div>
+        <a href="https://codepen.io/FreeCodeCamp/" target="_blank" class="mt-8 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+          Show all <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+    </section>
+    <!-- END PROJECTS SECTION -->
+
+    <!-- START CONTACT SECTION -->
+    <section id="contact" class="contact-section py-16 bg-white">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold mb-4">Let's work together...</h2>
+        <p class="text-lg font-light mb-8">How do you take your coffee?</p>
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
+          <a href="https://facebook.com/freecodecamp" target="_blank" class="btn bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"><i class="fab fa-facebook-square"></i> Facebook</a>
+          <a href="https://github.com/freecodecamp" target="_blank" class="btn bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://twitter.com/freecodecamp" target="_blank" class="btn bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-500"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="/cdn-cgi/l/email-protection#1e7b667f736e727b5e7b667f736e727b307d7173" class="btn bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700"><i class="fas fa-at"></i> Send a mail</a>
+          <a href="tel:555-555-5555" class="btn bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"><i class="fas fa-mobile-alt"></i> Call me</a>
+        </div>
+      </div>
+    </section>
+    <!-- END CONTACT SECTION -->
+
+    <!-- START FOOTER SECTION -->
+    <footer class="bg-gray-900 text-gray-300 py-4">
+      <div class="container mx-auto text-center text-sm">
+        <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+        <p>&copy; Created for <a href="https://www.freecodecamp.com/" target="_blank" class="text-blue-400 hover:text-blue-500">freeCodeCamp <i class="fab fa-free-code-camp"></i></a></p>
+      </div>
+    </footer>
+    <!-- END FOOTER SECTION -->
+  </body>
+</html>
